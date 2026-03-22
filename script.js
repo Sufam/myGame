@@ -11,7 +11,7 @@ for (let i = 1; i < 10; i++) {
         cell.classList.add('cell');
 
         cell.addEventListener('click', function(){
-            if (i == area && clicked == false){
+            if (i == area && cell.className == 'cell'){
                 area = j;
                 if (player % 2 != 0){
                     this.classList.add('o');
