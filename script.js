@@ -1,6 +1,7 @@
 const container = document.getElementById('grid-container');
 let player = 1;
 let area = 5;
+let round = 0;
 
 for (let i = 1; i < 10; i++) {
     const grid = document.createElement('div');
@@ -11,8 +12,9 @@ for (let i = 1; i < 10; i++) {
         cell.classList.add('cell');
 
         cell.addEventListener('click', function(){
-            if (i == area && cell.className == 'cell'){
+            if (i == area && cell.className == 'cell' || round == 0){
                 area = j;
+                round = 1;
                 if (player % 2 != 0){
                     this.classList.add('o');
                 }else{
