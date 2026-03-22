@@ -31,3 +31,12 @@
     grid-template-rows: auto auto auto;
     gap: 2%;
 }
+
+.cell.x{
+    background-color:beige;
+    content: "O";
+}
+
+.cell.o{
+    background-color:rgb(63, 47, 6);
+}
