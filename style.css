@@ -1,9 +1,12 @@
-#controller{
-    width: 95vmin;
-    height: 95vmin;    
+/* 主介面 */
+#panel{
+    top: 50px;
+    width: 85vmin;
+    height: 95vmin;
     margin: auto;
 }
 
+/* 控制所有格子 */
 #grid-container {
     display: grid;
     background-color: #000000;
@@ -19,11 +22,16 @@
     gap: 1%;
 }
 
-.cell {
-    background-color: #a2cfe7;
-    aspect-ratio: 1 / 1;
+/* 回上一步 */
+#back{
+    background-color: #c19a56fb;
+    width: 20%;
+    height: 10%;
+    margin: auto;
+
 }
 
+/* 格子-大 */
 .grid{
     background-color: #1670d0;
     display:grid;
@@ -32,11 +40,19 @@
     gap: 2%;
 }
 
-.cell.x{
+/* 格子-小 */
+.cell {
+    background-color: #a2cfe7;
+    aspect-ratio: 1 / 1;
+}
+
+/* 格子 圈 */
+.cell.o{
     background-color:beige;
     content: "O";
 }
 
-.cell.o{
+/* 格子 叉 */
+.cell.x{
     background-color:rgb(63, 47, 6);
 }
