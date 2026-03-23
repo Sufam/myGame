@@ -29,7 +29,7 @@
     height: 10vmin;
     margin: auto;
     font-size: 5vmin;
-    -webkit-text-size-adjust: none; /* 針對 Safari/Chrome */
+    -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
