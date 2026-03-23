@@ -2,7 +2,7 @@
 #panel{
     top: 50px;
     width: 85vmin;
-    height: 95vmin;
+    height: 90vmin;
     margin: auto;
 }
 
@@ -25,10 +25,12 @@
 /* 回上一步 */
 #back{
     background-color: #c19a56fb;
-    width: 20%;
-    height: 10%;
+    width: 20vmin;
+    height: 10vmin;
     margin: auto;
     font-size: 5vmin;
+    -webkit-text-size-adjust: none; /* 針對 Safari/Chrome */
+    text-size-adjust: none;
 }
 
 /* 格子-大 */
