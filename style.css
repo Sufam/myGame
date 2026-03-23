@@ -1,9 +1,11 @@
 /* 主介面 */
 #panel{
-    top: 50px;
+    position: absolute;
+    top: 3vh;
     width: 85vmin;
     height: 90vmin;
-    margin: auto;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* 控制所有格子 */
@@ -27,7 +29,10 @@
     background-color: #c19a56fb;
     width: 20vmin;
     height: 10vmin;
-    margin: auto;
+    position: fixed;
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 5vmin;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
