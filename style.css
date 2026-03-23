@@ -29,10 +29,12 @@
     background-color: #c19a56fb;
     width: 20vmin;
     height: 10vmin;
+    
     position: fixed;
     bottom: 1vh;
     left: 50%;
     transform: translate(-50%);
+
     font-size: 5vmin;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
