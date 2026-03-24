@@ -39,10 +39,8 @@ function showarea(next_area_num){;
         Array.from(highlight).forEach(item => {
             if (item.classList == 'cell highlight'){
                 item.className = 'cell';
-                console.log(item);
-        }
-    });
-
+            }
+        });
     }
 
     highlight = next_area.children;//顯示下一步可以走的格子
@@ -58,7 +56,11 @@ function showarea(next_area_num){;
 function backstep(){
     step[step.length - 1].className = "cell";
     area.pop();
-    step.pop();
+    step.pop();    
+    if (round > 1){   
+        showarea(area[area.length - 1]);
+    }
+
     if (round > 0){
         round -= 1;
     }
