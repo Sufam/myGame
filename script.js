@@ -43,14 +43,17 @@ function showarea(next_area_num){;
         });
     }
 
-    highlight = next_area.children;//顯示下一步可以走的格子
+    if (next_area != null){
+        highlight = next_area.children;//顯示下一步可以走的格子
 
-    Array.from(highlight).forEach(item => {
-        if (item.className == 'cell'){
-            item.classList.add('highlight');
-            console.log(item);
-        }
-    });
+        Array.from(highlight).forEach(item => {
+            if (item.className == 'cell'){
+                item.classList.add('highlight');
+                console.log(item);
+            }
+        });
+    }
+    
 }
 
 function backstep(){
