@@ -28,7 +28,7 @@ for (let i = 1; i < 10; i++) {
             }
             
         });
-        allGrid.push(cell);
+        allGrid[i-1].push(cell);
         grid.appendChild(cell);
     }
     container.appendChild(grid);
