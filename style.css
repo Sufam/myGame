@@ -68,4 +68,7 @@
 
 .cell.highlight{
     background-color:#07cc6d;
+    outline-style: solid;
+    outline-color: #000000;
+    outline-width: 1vmin;
 }
