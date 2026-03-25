@@ -32,7 +32,7 @@ for (let i = 1; i < 10; i++) {
     }
     container.appendChild(grid);
 }
-
+console.log(allGrid);
 function showarea(next_area_num){;
     next_area = document.getElementById(next_area_num);
     console.log(next_area);
