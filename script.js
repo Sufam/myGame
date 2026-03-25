@@ -2,12 +2,14 @@ const container = document.getElementById('grid-container');
 let round = 1;//回合
 let area = [];//儲存每一步的大格子
 let step = [];//儲存每一步
+let allGrid = [];//儲存每一格
 let highlight = null;
 
 for (let i = 1; i < 10; i++) {
     const grid = document.createElement('div');
     grid.classList.add('grid')
     grid.id = i;
+    allGrid.push([]);
     for (let j = 1; j < 10; j ++){
         const cell = document.createElement('div');
         cell.classList.add('cell');
@@ -26,7 +28,7 @@ for (let i = 1; i < 10; i++) {
             }
             
         });
-
+        allGrid.push(cell);
         grid.appendChild(cell);
     }
     container.appendChild(grid);
