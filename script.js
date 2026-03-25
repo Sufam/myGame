@@ -33,6 +33,7 @@ for (let i = 1; i < 10; i++) {
     container.appendChild(grid);
 }
 console.log(allGrid);
+
 function showarea(next_area_num){;
     next_area = document.getElementById(next_area_num);
     console.log(next_area);
@@ -61,11 +62,15 @@ function backstep(){
     step[step.length - 1].className = "cell";
     area.pop();
     step.pop();    
-    if (round > 1){   
+    if (round > 0){   
         showarea(area[area.length - 1]);
     }
 
     if (round > 0){
         round -= 1;
     }
+}
+
+function check(item, itemClass){
+    
 }
