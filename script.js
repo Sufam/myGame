@@ -74,3 +74,5 @@ function backstep(){
 function check(item, itemClass){
     
 }
+
+console.log(1);
