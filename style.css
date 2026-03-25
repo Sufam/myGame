@@ -58,12 +58,12 @@
 
 /* 格子 圈 */
 .cell.o{
-    background-color:#EF6C1A;
+    background-color:#F0E2D1;
 }
 
 /* 格子 叉 */
 .cell.x{
-    background-color: #6c4506;
+    background-color: #F08543;
 }
 
 .cell.highlight{
