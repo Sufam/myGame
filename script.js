@@ -26,7 +26,6 @@ for (let i = 1; i < 10; i++) {
                 step.push(this);
                 round += 1;
             }
-            
         });
         allGrid[i-1].push(cell);
         grid.appendChild(cell);
