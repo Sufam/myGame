@@ -48,7 +48,7 @@
     grid-template-rows: auto auto auto;
     
     outline-style: solid;
-    outline-color: #7c3d95;
+    outline-color: #295274;
     outline-width: 1vmin;
 
     gap: 2%;
@@ -67,7 +67,7 @@
 
 /* 格子 叉 */
 .grid.x{
-    background-color: #6c4506;
+    background-color: #9f4155;
 }
 
 .grid.highlight{
