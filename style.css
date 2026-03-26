@@ -18,9 +18,9 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 
-    outline-style: solid;
+    /*outline-style: solid;
     outline-color: #000000;
-    outline-width: 1vmin;
+    outline-width: 1vmin;*/
     gap: 1%;
 }
 
@@ -41,31 +41,35 @@
 }
 
 /* 格子-大 */
-.grid{
-    background-color: #011DF0;
+.area{
+    background-color: #616161;
     display:grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     
+    outline-style: solid;
+    outline-color: #7c3d95;
+    outline-width: 1vmin;
+
     gap: 2%;
 }
 
 /* 格子-小 */
-.cell {
-    background-color: #a2cfe7;
+.grid {
+    background-color: #b4b4b4;
     aspect-ratio: 1 / 1;
 }
 
 /* 格子 圈 */
-.cell.o{
-    background-color:#F0CCB6;
+.grid.o{
+    background-color:beige;
 }
 
 /* 格子 叉 */
-.cell.x{
-    background-color: #F08543;
+.grid.x{
+    background-color: #6c4506;
 }
 
-.cell.highlight{
-    background-color:#07cc6d;
+.grid.highlight{
+    background-color:#26c693;
 }
