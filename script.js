@@ -27,8 +27,8 @@ for (let i = 0; i < 9; i++){
         thisGrid = allGrid[i][j];
         const gridPlace = (i % 3 * 3) + (j % 3) + 1;
         thisGrid.addEventListener('click', function(){
-            console.log(thisGrid.classList);
-            console.log(thisGrid.classList == 'grid highlight' || round == 1);
+            console.log(thisArea);
+            console.log(area[area.length - 1];
             if (thisGrid.classList == 'grid highlight' || round == 1){
                 area.push(gridPlace);
                 showarea(gridPlace);
