@@ -30,6 +30,9 @@ for (let i = 0; i < 9; i++){
             console.log(thisArea);
             console.log(area[area.length - 1]);
             if (thisArea == area[area.length - 1] | round == 1){
+                if (this.classList == 'grid' | this.classList == 'grid highlight'){
+                    console.log(true);
+                }
                 area.push(gridPlace);
                 showarea(gridPlace);
                 this.className = 'grid';
