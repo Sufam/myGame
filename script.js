@@ -27,22 +27,19 @@ for (let i = 0; i < 9; i++){
         thisGrid = allGrid[i][j];
         const gridPlace = (i % 3 * 3) + (j % 3) + 1;
         thisGrid.addEventListener('click', function(){
-            console.log(thisArea);
-            console.log(area[area.length - 1]);
             if (thisArea == area[area.length - 1] | round == 1){
                 if (this.classList == 'grid' | this.classList == 'grid highlight'){
-                    console.log(true);
+                    area.push(gridPlace);
+                    showarea(gridPlace);
+                    this.className = 'grid';
+                    if (round % 2 != 0){
+                        this.classList.add('o');
+                    }else{
+                        this.classList.add('x');
+                    }
+                    step.push(this);
+                    round += 1;
                 }
-                area.push(gridPlace);
-                showarea(gridPlace);
-                this.className = 'grid';
-                if (round % 2 != 0){
-                    this.classList.add('o');
-                }else{
-                    this.classList.add('x');
-                }
-                step.push(this);
-                round += 1;
             }
         })
         allArea[thisArea - 1].appendChild(thisGrid);
