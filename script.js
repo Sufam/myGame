@@ -1,6 +1,6 @@
 const container = document.getElementById('grid-container');
 let round = 1;//回合
-let area = [];//儲存每一步的大格子
+let area = [0];//儲存每一步的大格子
 let step = [];//儲存每一步
 let allGrid = [];
 let allArea = [];
@@ -28,7 +28,7 @@ for (let i = 0; i < 9; i++){
         const gridPlace = (i % 3 * 3) + (j % 3) + 1;
         thisGrid.addEventListener('click', function(){
             console.log(thisArea);
-            if (thisGrid.classList == 'grid highlight' || round == 1){
+            if (thisArea == area[area.length - 1] || round == 1){
                 area.push(gridPlace);
                 showarea(gridPlace);
                 this.className = 'grid';
