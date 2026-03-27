@@ -19,7 +19,6 @@ for (let i = 0; i < 9; i ++){
         allGrid[i].push(createGrid);
     }
 }
-console.log(allGrid);
 
 for (let i = 0; i < 9; i++){
     for (let j = 0; j < 9; j++){
@@ -45,7 +44,6 @@ for (let i = 0; i < 9; i++){
         allArea[thisArea - 1].appendChild(thisGrid);
     }
 }
-console.log(allGrid)
 
 function showarea(next_area_num){;
     next_area = document.getElementById(next_area_num);
