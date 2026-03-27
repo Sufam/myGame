@@ -25,9 +25,9 @@ for (let i = 0; i < 9; i++){
     for (let j = 0; j < 9; j++){
         let thisArea = Math.trunc(i/3)*3 + Math.trunc(j/3) + 1;
         thisGrid = allGrid[i][j];
-        const gridPlace = i%3*3 + j%3 + 1;
+        const gridPlace = (i % 3 * 3) + (j % 3) + 1;
         thisGrid.addEventListener('click', function(){
-            if (thisArea == area[area.length - 1] && thisGrid.classList == 'grid' || thisGrid.classList == 'grid highlight' || round == 1){
+            if (thisArea == area[area.length - 1] && (thisGrid.classList == 'grid' || thisGrid.classList == 'grid highlight' || round == 1)){
                 area.push(gridPlace);
                 showarea(gridPlace);
                 this.className = 'grid';
